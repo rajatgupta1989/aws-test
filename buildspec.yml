@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - dotnet publish -c release -o ./build_output ./WebApplication1.csproj
+artifacts:
+  files:
+    - build_output/*
